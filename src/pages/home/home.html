@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="apphead">
+    <ion-title>
+      Ionic List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list >
+    <ion-item *ngFor="let l of list" (click)="Listitem(l)">
+      <ion-avatar item-left>
+        <img src="assets/img/{{l.Image}}">
+      </ion-avatar>
+      <h2>{{l.Name}}</h2>
+      <p>{{l.Design}}</p>
+      <button clear item-right>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
